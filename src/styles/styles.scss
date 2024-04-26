@@ -1,0 +1,46 @@
+@import "variables", "resets";
+
+/* Badge */
+.square, .pill {
+    padding: .4em 1em;
+    border-radius: 5px;
+    border: none;
+}
+
+.pill {
+    border-radius: 1em;
+}
+.gray {
+    background: $badge-gray-bg;
+    color: $badge-gray-txt;
+}
+.red {
+    background: $badge-red-bg;
+    color: $badge-red-txt;
+}
+.yellow {
+    background: $badge-yellow-bg;
+    color: $badge-yellow-txt;
+}
+.green {
+    background: $badge-green-bg;
+    color: $badge-green-txt;
+}
+.blue {
+    background: $badge-blue-bg;
+    color: $badge-blue-txt;
+}
+.indigo {
+    background: $badge-indigo-bg;
+    color: $badge-indigo-txt;
+}
+.purple {
+    background: $badge-purple-bg;
+    color: $badge-purple-txt;
+}
+.pink {
+    background: $badge-pink-bg;
+    color: $badge-pink-txt;
+}
+
+

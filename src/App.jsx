@@ -1,11 +1,12 @@
 import { useState } from 'react'
 import Badge from './components/Badge'
 
+
 function App() {
 
   return (
     <>
-      <Badge>Badge</Badge>
+      <Badge color='red' style='pill'>Badge</Badge>
     </>
   )
 }

@@ -1,9 +1,8 @@
 import React from "react"
 
-export default function Badge({children}) {
 
-    console.log(children)
+export default function Badge({children, color, style}) {
     return (
-        <button>{children}</button>
+        <button className={`${style} ${color}`}>{children}</button>
     )
 }
