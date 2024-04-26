@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <Badge color='red' style='square'>Badge</Badge>
-      <Banner type="neutral">
+      <Banner type="neutral" isMultiline={true}>
         <Banner.Title>Congratulations!</Banner.Title>
         <Banner.Text>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid pariatur, ipsum similique veniam.

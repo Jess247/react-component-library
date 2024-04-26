@@ -2,7 +2,7 @@ import {Children, useState} from "react";
 import { FaCheckCircle, FaExclamationTriangle, FaExclamationCircle } from "react-icons/fa";
 import { FaCircleXmark } from "react-icons/fa6";
 
-export default function Banner({children, type}) {
+export default function Banner({children, type, isMultiline}) {
     let bannerType = ""
     switch(type) {
         case 'success': bannerType = <FaCheckCircle/>
@@ -18,7 +18,7 @@ export default function Banner({children, type}) {
     return (
         <div className={`banner ${bannerType}`}>
             {bannerType}
-            {children}
+            {isMultiline ? children : null}
         </div>
     )
 }
