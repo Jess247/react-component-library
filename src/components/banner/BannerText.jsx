@@ -1,7 +1,11 @@
-import {useState} from "react";
+import {useContext} from "react";
+import {BannerContext} from '../../App'
 
 export default function BannerText({children}) {
-    return (
+
+    const {isBannerMultiline} = useContext(BannerContext)
+
+    return isBannerMultiline ? (
         <p className="banner__text">{children}</p>
-    )
+    ) : null
 }

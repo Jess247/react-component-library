@@ -1,21 +1,26 @@
+import { createContext } from 'react'
 import { useState } from 'react'
 import Badge from './components/Badge'
 import Banner from './components/banner/index'
 
+const BannerContext = createContext()
 
-function App() {
-
+export default function App() {
+  const bannerType = 'neutral'
+  const isBannerMultiline =  true
   return (
     <>
       <Badge color='red' style='square'>Badge</Badge>
-      <Banner type="neutral" isMultiline={true}>
-        <Banner.Title>Congratulations!</Banner.Title>
-        <Banner.Text>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid pariatur, ipsum similique veniam.
-        </Banner.Text>
-      </Banner>
+      <BannerContext.Provider value={{bannerType,isBannerMultiline}}>
+        <Banner>
+          <Banner.Title>Congratulations!</Banner.Title>
+          <Banner.Text>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid pariatur, ipsum similique veniam.
+          </Banner.Text>
+        </Banner>
+        </BannerContext.Provider>
     </>
   )
 }
 
-export default App
+export {BannerContext}

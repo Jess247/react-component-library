@@ -15,19 +15,19 @@
     background: $badge-gray-bg;
     color: $badge-gray-txt;
 }
-.red {
+.red, .error {
     background: $badge-red-bg;
     color: $badge-red-txt;
 }
-.yellow {
+.yellow, .warning {
     background: $badge-yellow-bg;
     color: $badge-yellow-txt;
 }
-.green {
+.green, .success  {
     background: $badge-green-bg;
     color: $badge-green-txt;
 }
-.blue {
+.blue, .neutral {
     background: $badge-blue-bg;
     color: $badge-blue-txt;
 }
@@ -44,4 +44,24 @@
     color: $badge-pink-txt;
 }
 
+.banner {
+    width: 80vw;
+    max-width: 800px;
+    padding: 1em;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    gap: .5em;
+    flex-wrap: wrap;
 
+    &__title {
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    &__text {
+        flex-basis: 100%;
+        padding-left: 1.5em;
+        font-size: .9rem;
+    }
+}
