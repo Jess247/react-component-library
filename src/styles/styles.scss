@@ -44,6 +44,8 @@
     color: $badge-pink-txt;
 }
 
+/* Banner */
+
 .banner {
     width: 80vw;
     max-width: 800px;
@@ -65,6 +67,8 @@
         font-size: .9rem;
     }
 }
+
+/* Card */
 
 .card {
     width: 336px;
@@ -103,5 +107,72 @@
         color: $text-medium;
         font-weight: 300;
     }
+
+}
+
+/* Testimonial */
+.testimonial {
+/* margin only for visual purposes*/
+margin-top: 5rem;
+    height: 400px;
+    min-width: 100vw;
+    padding: 0 2em;
+    background-color: $testimonial-bg;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: $text-light;
+
+    &__img {
+        width: 384px;
+        height: 464px;
+        border-radius: 8px;
+    }
+
+    &__text {
+        max-width: 800px;
+        line-height: 1.5rem;
+
+        &::before {
+            display: block;
+            font-size: 8rem;
+            color: $text-medium;
+            font-family: 'Space Grotesk', Times, serif;
+            content: '"';
+            opacity: .5;
+            
+        }
+    }
+
+    & span {
+        display: block;
+        line-height: 1.5rem;
+        
+        &:first-of-type {
+            margin-top: 1em;
+        }
+    }
+    &__company {
+        font-weight: 300;
+    }
+}
+
+@media (max-width: 400px) {
+    .testimonial{
+        flex-direction: column;
+
+        &__img{
+            width: 90vw;
+            height: 208px;
+            position: relative;
+            top: -25%;
+            object-fit:cover;
+            margin-bottom: -2em;
+        }
+        &__text {
+            text-align: left;
+        }
+    }
+
 
 }

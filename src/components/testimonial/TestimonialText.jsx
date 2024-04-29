@@ -1,9 +1,9 @@
 export default function TestimonialText({children, name, company}) {
     return (
-        <>
+        <div>
             <p className="testimonial__text">{children}</p> 
-            <p className="testimonial__name">{name}</p>
-            <p className="testimonial__company">{company}</p>
-        </>
+            <span className="testimonial__name">{name}</span>
+            <span className="testimonial__company">{company}</span>
+        </div>
     )
 }
