@@ -34,7 +34,13 @@ export default function App() {
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna nulla vitae laoreet augue. Amet feugiat est 
         integer dolor auctor adipiscing nunc urna, sit. 
         </TestimonialWithPic.Text>
-      </TestimonialWithPic>      
+      </TestimonialWithPic>     
+      <TestimonialWithPic.NoPic>
+        <TestimonialWithPic.Text name="Alex Mayer" company="Workcation, OTO">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna nulla vitae laoreet augue. Amet feugiat est 
+        integer dolor auctor adipiscing nunc urna, sit. 
+        </TestimonialWithPic.Text>
+      </TestimonialWithPic.NoPic>
     </>
   )
 }

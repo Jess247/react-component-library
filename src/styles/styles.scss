@@ -157,6 +157,45 @@ margin-top: 5rem;
     }
 }
 
+
+.testimonial-default {
+    text-align: center;
+    background-color: $card-bg;
+    padding: 3em 1em;
+
+    .logo-container {
+        &__logo {
+            color: $testimonial-bg;
+
+            & span {
+                color: $text-dark;
+            }
+        }
+    }
+
+    &__text {
+        max-width: 800px;
+        margin: 1em auto;
+
+
+        &::before {
+            content: "";
+        }
+    }
+
+    &__name::after {
+        content: "/";
+        padding: .5em;
+        color: $testimonial-bg;
+        font-weight: 800;
+    }
+
+    &__company {
+        color: $text-medium;
+    }
+
+}
+
 @media (max-width: 400px) {
     .testimonial{
         flex-direction: column;
@@ -174,5 +213,15 @@ margin-top: 5rem;
         }
     }
 
+    .testimonial-default {
+        text-align: left;
 
+        &__name {
+            display: block;
+    
+            &::after {
+                content: "";
+            }
+        }
+    }
 }

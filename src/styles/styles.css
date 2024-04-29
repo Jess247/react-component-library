@@ -172,6 +172,34 @@ body {
   font-weight: 300;
 }
 
+.testimonial-default {
+  text-align: center;
+  background-color: #F9FAFB;
+  padding: 3em 1em;
+}
+.testimonial-default .logo-container__logo {
+  color: #2545B8;
+}
+.testimonial-default .logo-container__logo span {
+  color: #0e0e0e;
+}
+.testimonial-default__text {
+  max-width: 800px;
+  margin: 1em auto;
+}
+.testimonial-default__text::before {
+  content: "";
+}
+.testimonial-default__name::after {
+  content: "/";
+  padding: 0.5em;
+  color: #2545B8;
+  font-weight: 800;
+}
+.testimonial-default__company {
+  color: #6B7280;
+}
+
 @media (max-width: 400px) {
   .testimonial {
     flex-direction: column;
@@ -186,6 +214,15 @@ body {
   }
   .testimonial__text {
     text-align: left;
+  }
+  .testimonial-default {
+    text-align: left;
+  }
+  .testimonial-default__name {
+    display: block;
+  }
+  .testimonial-default__name::after {
+    content: "";
   }
 }
 
