@@ -9,3 +9,10 @@ body {
     padding: 2em;
     font-family: "Inter", sans-serif;
 }
+
+/* only for visual purposes */
+#root {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
