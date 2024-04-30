@@ -168,8 +168,9 @@ body {
 .testimonial span:first-of-type {
   margin-top: 1em;
 }
-.testimonial__company {
+div .testimonial__company {
   font-weight: 300;
+  color: inherit;
 }
 
 .testimonial-default {

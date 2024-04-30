@@ -152,8 +152,9 @@ margin-top: 5rem;
             margin-top: 1em;
         }
     }
-    &__company {
+    div &__company {
         font-weight: 300;
+        color: inherit;
     }
 }
 
